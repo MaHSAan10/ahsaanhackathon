@@ -1,0 +1,105 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0em 0em 3em 0em;
+    border-bottom: 1px solid black;
+}
+
+.footerLogo {
+    width: 25%;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logoContent {
+    font-size: 1.1rem;
+    margin-top: 2em;
+    color: #4B5563;
+}
+
+.socialMediaIcons {
+    display: flex;
+    margin-top: 2em;
+}
+
+.socialMediaIcons div {
+    width: 50px;
+    height: 50px;
+    background-color: #F3F4F6;
+    margin-right: 1em;
+    border-radius: 7px;
+    position: relative;
+}
+
+.socialMediaIcons .logoImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60%;
+}
+
+.footer h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: start;
+    color: #374172;
+}
+
+.footer ul {
+    margin-top: 1.5em;
+}
+
+.footer ul li {
+    font-size: 1.1rem;
+    margin-bottom: .7em;
+    color: #4B5563;
+}
+
+.company {
+    width: 15%;
+}
+
+.support {
+    width: 15%;
+}
+
+.contact {
+    width: 15%;
+}
+
+.footContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0 2em 0;
+}
+.footContent span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
+.copyWrite {
+    width: 25%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4B5563;
+}
+
+.designBy {     
+    width: 25%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4B5563;
+}
+
+.codeBy {
+    width: 25%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4B5563;
+}

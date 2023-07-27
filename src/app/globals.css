@@ -1,0 +1,470 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Home Main */
+.home {
+    width: 100%;
+}
+
+.homeMain {
+    width: 100%;
+    display: flex;
+}
+
+.mainContent {
+    width: 40%;
+    margin-left: 5em;
+}
+
+.mainSaleButton {
+    width: 120px;
+    background-color: #DBEAFE;
+    color: #1E3A8A;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: .5em 1em;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 3em;
+}
+
+.mainHeading {
+    width: 80%;
+    font-size: 3.3rem;
+    font-weight: bolder;
+    line-height: 100%;
+    margin-top: .5em;
+    color: #212121;
+}
+
+.mainPara {
+    width: 70%;
+    color: #4B5563;
+    font-size: 1.1rem;
+    line-height: 130%;
+    margin-top: 2.7em;
+}
+
+.startShoppingButton a {
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    ;
+    color: #C0ECFC;
+    padding: 1.2em 1.8em;
+    margin-top: 3em;
+}
+
+.startShoppingLogo {
+    width: 40%;
+}
+
+.shoppingLogo {
+    width: 30px;
+    height: 30px;
+}
+
+.startShoppingButton p {
+    width: 60%;
+    text-align: center;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.brandsImages {
+    width: 100%;
+    display: flex;
+    margin-top: 2.5em;
+}
+
+.brandsImages img {
+    margin-right: 1.5em;
+}
+
+.mainImage {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainImageBG {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #FFECE3;
+}
+
+.mainImage .image {
+    position: relative;
+    width: 550px;
+}
+
+/* Promotions */
+.promotions {
+    width: 100%;
+    text-align: center;
+}
+
+.promotions h1 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 7em;
+    color: #0062F5;
+}
+
+.promotionHeading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.promotionImages {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.flatImages {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summerFlat {
+    width: 100%;
+    height: 47.5%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 167, 167);
+}
+
+.summerFlatContent {
+    text-align: left;
+    margin-left: 1.5em;
+}
+
+.summerFlatContent h2 {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 110%;
+    font-weight: 700;
+}
+
+.summerFlatContent p {
+    font-size: 1.3rem;
+}
+
+.summerFlatImage {
+    width: 50%;
+}
+
+.promoCode {
+    width: 100%;
+    height: 47.5%;
+    background-color: blueviolet;
+    box-sizing: border-box;
+}
+
+.promoCode h3 {
+    font-size: 2.3rem;
+    color: white;
+    font-weight: 1000;
+    margin-top: .8em;
+}
+
+.promoCode p {
+    color: white;
+    font-weight: 600;
+    margin-top: .8em;
+    margin-bottom: 1em;
+}
+
+.promoCode a {
+    color: white;
+    width: 70%;
+    background-color: black;
+    border-radius: 5px;
+    padding: .7em 1.2em;
+}
+
+.discountImages {
+    width: 59%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sweatShirt {
+    width: 49%;
+    background-color: grey;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sweatShirt p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.buttonBomber {
+    width: 49%;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonBomber p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.discountImages span {
+    font-weight: 700;
+}
+
+.discountImages img {
+    width: 70%;
+    align-self: center;
+}
+
+/* Main Product */
+.mainProduct {
+    width: 100%;
+    text-align: center;
+}
+
+.mainProduct h1 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 7em;
+    color: #0062F5;
+}
+
+.mainProdHeading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1em;
+    text-transform: capitalize;
+}
+
+.mainProdImages {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 2em;
+}
+
+.prodImg {
+    transition: transform .4s;
+}
+
+.prodImg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#img3 {
+    z-index: 20;
+}
+
+#img2 {
+    z-index: 10;
+}
+
+.prodImg p {
+    font-size: 1.2rem;
+    font-weight: 620;
+    text-align: left;
+}
+
+.prodQuote {
+    width: 100%;
+    margin-top: 7em;
+}
+
+.prodQuote p {
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 110%;
+    width: 35%;
+    text-align: left;
+    margin-left: 14em;
+    margin-bottom: -50px;
+}
+
+.prodQuality {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8FAFD;
+    padding: 3em;
+}
+
+.prodQualityContent {
+    width: 48%;
+    margin-top: 3em;
+}
+
+.prodQualityContentHeading h2 {
+    font-size: 7rem;
+    font-weight: 650;
+    color: #E5E7EB;
+    height: 100%;
+    text-align: left;
+    line-height: 100%;
+}
+
+.prodQualityContentHeading {
+    width: 40%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.qualitiesGrid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: transparent;
+    justify-content: space-between;
+    column-gap: 2em;
+    row-gap: 2em;
+    position: relative;
+}
+
+.qualities {
+    background-color: transparent;
+    text-align: left;
+    width: 100%;
+}
+
+.qualities h1 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.qualities p {
+    font-size: 1.1rem;
+    margin-top: 1em;
+    color: #212121;
+}
+
+.prodQualityImage {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.qualityImage {
+    width: 55%;
+}
+
+.qualityImageContent {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.qualityImageContent p {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.qualityImageButton {
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: .5em 1.5em;
+}
+
+/* Newsletter */
+.newsLetter {
+    width: 100%;
+    margin-top: 13em;
+    margin-bottom: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsLetterBgHeading h2 {
+    font-size: 7rem;
+    font-weight: 650;
+    color: #E5E7EB;
+    height: 100%;
+    text-align: center;
+    line-height: 100%;
+}
+
+.newsLetterBgHeading {
+    width: 100%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.newsLetterContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.newsLetter h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.newsLetter p {
+    font-size: 1.1rem;
+    margin-top: .5em;
+}
+
+.newsLetterInput {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.newsLetterInput a {
+    width: 130px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5em 1em;
+    border-radius: 7px;
+    margin-left: .5em;
+    text-align: center;
+}
+
+.newsLetterInput input {
+    width: 370px;
+    border: 1px solid black;
+    padding: 0 0 0 1em;
+}

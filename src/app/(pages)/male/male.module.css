@@ -1,0 +1,42 @@
+.Products{
+    width: 100%;
+}
+.Products_Content{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 3em;
+    margin-bottom: 8em;
+}
+.card{
+    width: 280px;
+}
+.card img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+.card img{
+    width: 300px;
+    height: 300px;
+}
+.card .Product_Name{
+    font-size: 1.3rem;
+    font-weight: 650;
+    color: rgb(15,23,42);
+    margin-top: .2em;
+}
+.card .Product_Type{
+    font-size: 1.1rem;
+    font-weight: 650;
+    color: rgb(107,114,128);
+    margin-top: .2em;
+}
+.card .Product_Price{
+    font-size: 1.3rem;
+    font-weight: 650;
+    color:  rgb(15,23,42);
+    margin-top: .2em;
+}
