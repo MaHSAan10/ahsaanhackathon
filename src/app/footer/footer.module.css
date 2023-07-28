@@ -1,5 +1,5 @@
 .footer {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     padding: 0em 0em 3em 0em;
@@ -78,11 +78,13 @@
     justify-content: space-evenly;
     padding: 2em 0 2em 0;
 }
-.footContent span{
+
+.footContent span {
     font-size: 1.2rem;
     font-weight: 700;
     color: black;
 }
+
 .copyWrite {
     width: 25%;
     font-size: 1.1rem;
@@ -90,7 +92,7 @@
     color: #4B5563;
 }
 
-.designBy {     
+.designBy {
     width: 25%;
     font-size: 1.1rem;
     font-weight: 500;
@@ -102,4 +104,52 @@
     font-size: 1.1rem;
     font-weight: 500;
     color: #4B5563;
+}
+
+@media (max-width:1025px) {
+    .footer {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .footerLogo {
+        width: 60%;
+        margin-left: 4em;
+    }
+
+    .company {
+        margin-left: 4em;
+        width: 40%;
+    }
+
+    .support {
+        margin-left: 4em;
+        width: 40%;
+    }
+
+    .contact {
+        margin-left: 4em;
+        width: 40%;
+    }
+
+    .footContent {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .copyWrite {
+        margin-left: 4em;
+        width: 50%;
+
+    }
+
+    .designBy {
+        margin-left: 4em;
+        width: 50%;
+    }
+
+    .codeBy {
+        margin-left: 4em;
+        width: 50%;
+    }
 }

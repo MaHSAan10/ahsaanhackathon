@@ -143,7 +143,8 @@ export default function Home() {
           <div className="newsLetterInput">
             <input type="text" placeholder='Email' />
             <a href="#">Get Started</a>
-          </div></div>
+          </div>
+        </div>
 
       </div>
     </div>
