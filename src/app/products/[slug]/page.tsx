@@ -18,14 +18,14 @@ export default function Details({ params }: productDetails) {
     const data: any = products.find((value) => {
         return value.slug == params.slug
     })
-    let price=data.price;
-    let [oldPrice,updatePrice]=useState(price);
-    const increasePrice=()=>{
-        updatePrice(oldPrice+price);
+    let price = data.price;
+    let [oldPrice, updatePrice] = useState(price);
+    const increasePrice = () => {
+        updatePrice(oldPrice + price);
     }
-    const decreasePrice=()=>{
-        updatePrice(oldPrice-price)
-        if(oldPrice<=price) updatePrice(price)
+    const decreasePrice = () => {
+        updatePrice(oldPrice - price)
+        if (oldPrice <= price) updatePrice(price)
     }
     let [num, update] = useState(1);
     const increaseQuantity = () => {
@@ -33,16 +33,22 @@ export default function Details({ params }: productDetails) {
     }
     const decreaseQuantity = () => {
         update(num - 1);
-        if (num <= 1) update(num=1);
+        if (num <= 1) update(num = 1);
     }
     return (
         <div className={Style.details_Main}>
-            <div className={Style.shortImage}>
-                <img src={data.image} alt="" width={120} height={120} />
+            <div className={Style.productNameMobile}>{data.name}</div>
+            <div className={Style.productTypeMobile}>{data.cloth_Type}</div>
+            <div className={Style.detailsImages}>
+
+                <div className={Style.shortImage}>
+                    <img src={data.image} alt="" width={120} height={120} />
+                </div>
+                <div className={Style.bigImage}>
+                    <img src={data.image} alt="" width={550} height={520} />
+                </div>
             </div>
-            <div className={Style.bigImage}>
-                <img src={data.image} alt="" width={550} height={520} />
-            </div>
+
             <div className={Style.order}>
                 <div className={Style.productName}>{data.name}</div>
                 <div className={Style.productType}>{data.cloth_Type}</div>
@@ -58,9 +64,9 @@ export default function Details({ params }: productDetails) {
                 </div>
                 <div className={Style.selectQuantity}>
                     <h2>Quantity</h2>
-                    <button onClick={() => { decreaseQuantity(),decreasePrice() }}><p>-</p></button>
+                    <button onClick={() => { decreaseQuantity(), decreasePrice() }}><p>-</p></button>
                     <p>{num}</p>
-                    <button onClick={() => { increaseQuantity(),increasePrice() }}><p>+</p></button>
+                    <button onClick={() => { increaseQuantity(), increasePrice() }}><p>+</p></button>
                 </div>
                 <div className={Style.totalPrice}>
                     <h3>Total: </h3>
