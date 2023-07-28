@@ -19,12 +19,12 @@ export default function Home() {
               Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.
             </div>
             <div className="startShoppingButton">
-              <a href="#">
+              <Link href={'/allProducts'}>
                 <div className="startShoppingLogo">
                   <BiCart className='shoppingLogo' />
                 </div>
                 <p>Start Shoping</p>
-              </a>
+              </Link>
             </div>
             <div className="brandsImages">
               <img src="https://hackathon-dine-market.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero1.66abddd4.png&w=256&q=75" alt="" />
@@ -126,9 +126,11 @@ export default function Home() {
             </div>
             <div className="qualityImageContent">
               <p>This piece is ethically crafted in our small family-owned workshop in Peru with unmatched attention to detail and care. The Natural color is the actual natural color of the fiber, undyed and 100% traceable.</p>
-              <div className="qualityImageButton">
-                <a href="">See All Product</a>
-              </div>
+              <Link href={'/allProducts'}>
+                <div className="qualityImageButton">
+                  See All Product
+                </div>
+              </Link>
             </div>
           </div>
         </div>
