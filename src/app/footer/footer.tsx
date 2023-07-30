@@ -40,7 +40,7 @@ export default function Footer() {
                 <div className={Style.contact}>
                     <h1>Contact</h1>
                     <ul>
-                        <li>Whatsapp</li>
+                        <a href="https://api.whatsapp.com/send?phone=+923114048414"><li>Whatsapp</li></a>
                         <li>Support 24h</li>
                     </ul>
                 </div>
@@ -53,7 +53,7 @@ export default function Footer() {
                     Design by. <span>Weird Design Studio</span>
                 </div>
                 <div className={Style.codeBy}>
-                    Code by. <span>MaHSAan10</span>
+                  <a href="https://github.com/MaHSAan10/ahsaanhackathon">Code by. <span>MaHSAan10</span></a>  
                 </div>
             </div>
         </div>
