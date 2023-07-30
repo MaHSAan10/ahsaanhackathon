@@ -40,7 +40,7 @@ export default function Footer() {
                 <div className={Style.contact}>
                     <h1>Contact</h1>
                     <ul>
-                        <a href="https://api.whatsapp.com/send?phone=+923114048414"><li>Whatsapp</li></a>
+                        <a href="https://wa.me/+923114048414"><li>Whatsapp</li></a>
                         <li>Support 24h</li>
                     </ul>
                 </div>
