@@ -3,6 +3,9 @@ import products from "@/app/utils/mock";
 import Style from "./details.module.css";
 import { BiCart } from 'react-icons/bi';
 import { use, useState } from "react";
+
+
+let cartProducts: any = [];
 function productData(data: any) {
     slug: data.slug
 }
@@ -14,10 +17,23 @@ type productDetails = {
         slug: string
     }
 }
+let arr: any = [];
+
+
 export default function Details({ params }: productDetails) {
     const data: any = products.find((value) => {
         return value.slug == params.slug
     })
+    const [initial, after] = useState(cartProducts)
+    
+    function updateData() {
+        cartProducts.push(data);
+        after(cartProducts)
+        arr=initial;
+        updateArr()
+        alert("Added Successfully");
+    }
+
     let price = data.price;
     let [oldPrice, updatePrice] = useState(price);
     const increasePrice = () => {
@@ -72,7 +88,7 @@ export default function Details({ params }: productDetails) {
                     <h3>Total: </h3>
                     <p className={Style.price}>${oldPrice}.00</p>
                 </div>
-                <div className={Style.cartButton}>
+                <div onClick={() => { updateData() }} className={Style.cartButton}>
                     <BiCart className={Style.CartLogo} />
                     <p>Add to Cart</p>
                 </div>
@@ -80,3 +96,8 @@ export default function Details({ params }: productDetails) {
         </div>
     )
 }
+export function updateArr() {
+    return arr;
+}
+
+

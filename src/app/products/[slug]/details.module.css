@@ -161,6 +161,11 @@
     width: 25px;
     height: 25px;
 }
+.cartMain{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
 
 @media (max-width:770px) {
     .details_Main {

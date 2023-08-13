@@ -5,7 +5,7 @@ const AllProducts = () => {
     const allProducts=products.filter((item)=>{
         return item
     })
-    const getData = (data: any) => {
+    const getData = (data: any) => {    
         return (
             <div className={Style.card}>
                 <Link href={`/products/${data.slug}`}>

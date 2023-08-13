@@ -10,7 +10,7 @@ const Female = () => {
             <div className={Style.card}>
                 <Link href={`/products/${data.slug}`}>
                     <img src={data.image} alt={data.name} />
-                    <h1> className={Style.Product_Name}>{data.name}</h1>
+                    <h1 className={Style.Product_Name}>{data.name}</h1>
                     <h2 className={Style.Product_Type}>${data.cloth_Type}</h2>
                     <h3 className={Style.Product_Price}>${data.price}</h3>
                 </Link>

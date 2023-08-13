@@ -25,7 +25,7 @@ export default function Navbar() {
                     <input className={Style.navinput} type="text" placeholder="What you looking for" />
                 </div>
 
-                <div className={Style.cartlogo}><BiCart className={Style.cart} /></div>
+                <Link href={'/cart'}><div className={Style.cartlogo}><BiCart className={Style.cart} /></div></Link> 
                 <button className={Style.ham} onClick={() => update(now === 'before' ? 'after' : 'before')}>
                     <GiHamburgerMenu className={Style.hambutton} />
                 </button>
